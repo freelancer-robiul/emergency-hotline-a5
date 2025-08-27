@@ -18,6 +18,9 @@ getElement("card-section").addEventListener("click", function (e) {
     let serviceName = callButton.parentNode.children[1].innerText;
     let serviceNumber = callButton.parentNode.children[3].innerText;
 
+    let newTime = new Date();
+    let currentTime = newTime.toLocaleTimeString();
+
     let callHistoryContainer = getElement("call-history-container");
 
     let newDivElement = document.createElement("div");
@@ -41,7 +44,7 @@ getElement("card-section").addEventListener("click", function (e) {
                 <div class="current-date">
                   <span
                     class="2xl:text-[16px] xl:text-[14px] lg:text-[12px] text-[12px] text-[#5C5C5C] font-[400] font-hind-madurai"
-                    >11:36:58AM</span
+                    >${currentTime}</span
                   >
                 </div>
               </div>
