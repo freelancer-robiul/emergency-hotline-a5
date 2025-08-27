@@ -18,39 +18,44 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="max-w-[1920px] mx-auto">
+  <body class="max-w-[1280px] mx-auto">
     <!-- Navbar  flex -->
-    <div class="navbar flex justify-between py-[24px] px-[60px]">
+    <div
+      class="navbar flex flex-col md:flex-row justify-between py-[24px] px-[60px]"
+    >
       <!-- Navbar left side  -->
       <div class="left-side flex items-center">
         <div>
-          <img class="w-14" src="./assets/logo.png" alt="" />
+          <img class="md:w-14 w-10" src="./assets/logo.png" alt="" />
         </div>
         <div class="ml-[10px]">
           <h1
-            class="text-[#006747] text-[24px] font-bold leading-[30px] font-hind-madurai"
+            class="text-[#006747] text-[24px] font-bold leading-[30px] font-hind-madurai ml-[15px]"
           >
-            Emergency<br />Service
+            Emergency<br class="hidden md:block" />
+            Service
           </h1>
         </div>
       </div>
 
       <!-- Navbar right side Flex -->
-      <div class="right-side flex items-center gap-9">
+      <div class="right-side flex items-center gap-9 mt-[20px]">
         <div class="heart flex items-center">
-          <span class="text-[16px] text-[#000000] font-extrabold font-inter"
+          <span
+            class="md:text-[16px] text-[12px] text-[#000000] font-extrabold font-inter"
             >0</span
           >
-          <img class="w-8 ml-[10px]" src="./assets/heart.png" alt="" />
+          <img class="md:w-8 w-6 ml-[10px]" src="./assets/heart.png" alt="" />
         </div>
         <div class="coin flex items-center">
-          <span class="text-[16px] text-[#000000] font-extrabold font-inter"
+          <span
+            class="md:text-[16px] text-[12px] text-[#000000] font-extrabold font-inter"
             >100</span
           >
-          <img class="w-8 ml-[10px]" src="./assets/coin.png" alt="" />
+          <img class="md:w-8 w-6 ml-[10px]" src="./assets/coin.png" alt="" />
         </div>
         <div
-          class="copy bg-[#00A63E] text-white px-[36px] py-[14px] text-[16px] rounded-4xl font-semibold font-inter"
+          class="copy bg-[#00A63E] text-white md:px-[36px] px-[18px] md:py-[14px] py-[10px] md:text-[16px] text-[12px] rounded-4xl font-semibold font-inter"
         >
           <span>2</span>
           <span>Copy</span>
@@ -63,11 +68,15 @@
     <div
       class="hero-area text-center bg-gradient-to-r from-[#023222] via-[#006747] to-[#013223] py-[28px] text-white"
     >
-      <img class="mx-auto w-24" src="./assets/logo-dark.png" alt="" />
-      <h1 class="text-[40px] font-bold font-hind-madurai my-[10px]">
+      <img class="mx-auto md:w-24 w-16" src="./assets/logo-dark.png" alt="" />
+      <h1
+        class="md:text-[40px] text-[24px] font-bold font-hind-madurai my-[10px]"
+      >
         Emergency Service Directory
       </h1>
-      <p class="text-[20px] font-semibold font-hind-madurai">
+      <p
+        class="md:text-[20px] text-[14px] md:px-[0] px-[20px] font-semibold font-hind-madurai"
+      >
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
@@ -76,9 +85,11 @@
 
     <!-- Main Section Started  -->
     <div class="main-section-area bg-[#f5fff6] py-[50px]">
-      <div class="w-11/12 mx-auto grid grid-cols-12 gap-8">
+      <div class="w-11/12 mx-auto grid md:grid-cols-12 gap-8">
         <!-- Card Section  -->
-        <div class="card-section grid grid-cols-3 col-span-9 gap-4">
+        <div
+          class="card-section grid md:grid-cols-3 grid-cols-1 md:col-span-9 col-span-6 gap-4"
+        >
           <!-- single card 1  -->
           <div class="single-card bg-white p-[32px] rounded-lg shadow-lg">
             <div class="flex justify-between items-center mb-[16px]">
@@ -89,31 +100,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               National Emergency Number
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               National Emergency
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >999</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               All
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -131,7 +145,9 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Police Helpline Number
             </h1>
             <p
@@ -139,23 +155,24 @@
             >
               Police
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >999</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Police
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -173,11 +190,13 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Fire Service Number
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Fire Service
             </p>
@@ -185,18 +204,18 @@
               >999</span
             >
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl p-[5px] w-12 text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl p-[5px] w-12 text-center mb-[20px]"
             >
               Fire
             </p>
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -214,31 +233,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Ambulance Service
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Ambulance
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >1994-999999</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Health
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -256,31 +278,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Women & Child Helpline
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Women & Child Helpline
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >109</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Help
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -298,31 +323,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Anti-Corruption Helpline
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Anti-Corruption
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >106</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Govt.
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -340,31 +368,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Electricity Helpline
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Electricity Outage
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >16216</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Electricity
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -382,31 +413,34 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Brac Helpline
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Brac
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >16445</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               NGO
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -424,32 +458,35 @@
               />
               <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
             </div>
-            <h1 class="text-[24px] text-[#111111] font-bold font-hind-madurai">
+            <h1
+              class="md:text-[24px] text-[20px] text-[#111111] font-bold font-hind-madurai"
+            >
               Bangladesh Railway Helpline
             </h1>
             <p
-              class="text-[18px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
+              class="md:text-[18px] text-[14px] text-[#5C5C5C] font-normal font-roboto mb-[24px]"
             >
               Bangladesh Railway
             </p>
-            <span class="text-[32px] text-[#111111] font-bold font-roboto"
+            <span
+              class="md:text-[32px] text-[24px] text-[#111111] font-bold font-roboto"
               >163</span
             ><br />
             <p
-              class="bg-[#F2F2F2] text-[#5C5C5C] text-[18px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
+              class="bg-[#F2F2F2] text-[#5C5C5C] md:text-[18px] text-[14px] font-hind-madurai rounded-3xl py-[5px] px-[8px] inline-block text-center mb-[20px]"
             >
               Travel
             </p>
             <br />
 
             <button
-              class="border-1 border-gray-200 py-[7px] px-[60px] rounded-lg"
+              class="border-1 border-gray-200 py-[7px] md:px-[60px] px-[40px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] text-white py-[7px] px-[60px] rounded-lg"
+              class="bg-[#00A63E] text-white py-[7px] md:px-[60px] px-[40px] rounded-lg md:ml-[0] ml-[10px]"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -460,18 +497,20 @@
         <!-- Card Section End  -->
 
         <!-- History Section  -->
-        <div class="history-section col-span-3 bg-white p-[24px] rounded-lg">
+        <div
+          class="history-section md:col-span-3 col-span-6 bg-white p-[24px] rounded-lg"
+        >
           <!-- Call History Header part  -->
           <div class="flex justify-between items-center mb-[16px]">
             <div
-              class="call-history flex items-center text-[#111111] text-[20px] font-[500] font-roboto"
+              class="call-history flex items-center text-[#111111] md:text-[20px] text-[14px] font-[500] font-roboto"
             >
               <i class="fa-regular fa-clock"></i>
               <p class="ml-[10px]">Call History</p>
             </div>
             <div>
               <button
-                class="bg-[#00A63E] text-white px-[36px] py-[14px] text-[16px] rounded-4xl font-semibold font-inter"
+                class="bg-[#00A63E] text-white md:px-[36px] px-[18px] md:py-[14px] py-[10px] md:text-[16px] text-[12px] rounded-4xl font-semibold font-inter"
               >
                 Clear
               </button>
@@ -486,18 +525,20 @@
               class="single-container flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg mb-[16px]"
             >
               <div class="left-side">
-                <h1 class="text-[18px] text-[#111111] font-[600] font-inter">
+                <h1
+                  class="md:text-[18px] text-[14px] text-[#111111] font-[600] font-inter"
+                >
                   Fire Service Number
                 </h1>
                 <span
-                  class="text-[18px] text-[#5C5C5C] font-[400] font-hind-madurai"
+                  class="md:text-[18px] text-[14px] text-[#5C5C5C] font-[400] font-hind-madurai"
                   >999</span
                 >
               </div>
               <div class="right-side">
                 <div class="current-date">
                   <span
-                    class="text-[18px] text-[#5C5C5C] font-[400] font-hind-madurai"
+                    class="md:text-[18px] text-[14px] text-[#5C5C5C] font-[400] font-hind-madurai"
                     >11:36:58 AM</span
                   >
                 </div>
@@ -510,18 +551,20 @@
               class="single-container flex justify-between items-center bg-[#FAFAFA] p-[16px] rounded-lg mb-[16px]"
             >
               <div class="left-side">
-                <h1 class="text-[18px] text-[#111111] font-[600] font-inter">
+                <h1
+                  class="md:text-[18px] text-[14px] text-[#111111] font-[600] font-inter"
+                >
                   National Emergency Number
                 </h1>
                 <span
-                  class="text-[18px] text-[#5C5C5C] font-[400] font-hind-madurai"
+                  class="md:text-[18px] text-[14px] text-[#5C5C5C] font-[400] font-hind-madurai"
                   >1994-999999</span
                 >
               </div>
               <div class="right-side">
                 <div class="current-date">
                   <span
-                    class="text-[18px] text-[#5C5C5C] font-[400] font-hind-madurai"
+                    class="md:text-[18px] text-[14px] text-[#5C5C5C] font-[400] font-hind-madurai"
                     >11:36:58 AM</span
                   >
                 </div>
