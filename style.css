@@ -37,3 +37,7 @@ button,
   color: #111;
   transition: 0.9s;
 }
+
+.heart:hover {
+  color: red;
+}
