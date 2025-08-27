@@ -24,3 +24,16 @@ button,
 .heart:hover {
   cursor: pointer;
 }
+
+.btn-copy:hover {
+  background-color: black;
+  color: white;
+  transition: 0.9s;
+}
+
+.btn-call:hover,
+.btn-clear:hover {
+  background: linear-gradient(90deg, #86efac, #fbcfe8);
+  color: #111;
+  transition: 0.9s;
+}

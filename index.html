@@ -40,9 +40,10 @@
 
       <!-- Navbar right side Flex -->
       <div class="right-side flex items-center gap-9 mt-[20px]">
-        <div class="heart flex items-center">
+        <div class="nav-heart flex items-center">
           <span
-            class="md:text-[16px] text-[12px] text-[#000000] font-extrabold font-inter"
+            id="heart-1"
+            class="heart-1 md:text-[16px] text-[12px] text-[#000000] font-extrabold font-inter"
             >0</span
           >
           <img class="md:w-8 w-6 ml-[10px]" src="./assets/heart.png" alt="" />
@@ -88,10 +89,12 @@
       <div class="w-11/12 mx-auto grid md:grid-cols-12 gap-8">
         <!-- Card Section  -->
         <div
+          id="card-section"
           class="card-section grid md:grid-cols-3 grid-cols-1 md:col-span-9 col-span-6 gap-4"
         >
           <!-- single card 1  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -100,7 +103,12 @@
                 src="./assets/emergency.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -123,13 +131,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -139,6 +149,7 @@
 
           <!-- single card 2  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -147,7 +158,12 @@
                 src="./assets/police.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -170,13 +186,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -186,6 +204,7 @@
 
           <!-- single card 3  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -194,7 +213,12 @@
                 src="./assets/fire-service.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -216,13 +240,15 @@
               Fire
             </p>
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -232,6 +258,7 @@
 
           <!-- single card 4  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -240,7 +267,12 @@
                 src="./assets/ambulance.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -263,13 +295,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -279,6 +313,7 @@
 
           <!-- single card 5  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -287,7 +322,12 @@
                 src="./assets/emergency.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -310,13 +350,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -326,6 +368,7 @@
 
           <!-- single card 6  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -334,7 +377,12 @@
                 src="./assets/fire-service.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -357,13 +405,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -373,6 +423,7 @@
 
           <!-- single card 7  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -381,7 +432,12 @@
                 src="./assets/emergency.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -404,13 +460,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -420,6 +478,7 @@
 
           <!-- single card 8  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -428,7 +487,12 @@
                 src="./assets/emergency.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -451,13 +515,15 @@
             </p>
             <br />
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -467,6 +533,7 @@
 
           <!-- single card 9  -->
           <div
+            id="single-card"
             class="single-card bg-white 3xl:p-[32px] 2xl:p-[28px] xl:p-[20px] lg:p-[18px] md:p-[12px] p-[24px] rounded-lg shadow-lg"
           >
             <div class="flex justify-between items-center mb-[16px]">
@@ -475,7 +542,12 @@
                 src="./assets/emergency.png"
                 alt=""
               />
-              <img class="heart w-4 h-4" src="./assets/heart (2).png" alt="" />
+              <img
+                id="heart"
+                class="heart w-4 h-4"
+                src="./assets/heart (2).png"
+                alt=""
+              />
             </div>
             <h1
               class="3xl:text-[24px] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[20px] text-[#111111] font-bold font-hind-madurai"
@@ -499,13 +571,15 @@
             <br />
 
             <button
-              class="border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-copy"
+              class="btn-copy border-1 border-gray-200 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-regular fa-copy"></i>
               Copy
             </button>
             <button
-              class="bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
+              id="btn-call"
+              class="btn-call bg-[#00A63E] 3xl:text-[16px] 2xl:text-[14px] xl:text-[14px] md:text-[10px] text-[14px] text-white py-[7px] 3xl:px-[60px] 2xl:px-[40px] xl:px-[30px] lg:px-[22px] md:px-[15px] px-[50px] rounded-lg"
             >
               <i class="fa-solid fa-phone"></i>
               Call
@@ -529,7 +603,7 @@
             </div>
             <div>
               <button
-                class="bg-[#00A63E] text-white 2xl:px-[30px] xl:px-[20px] lg:px-[18px] md:px-[16px] px-[18px] xl:py-[10px] lg:py-[8px] md:py-[8px] py-[8px] 2xl:text-[16px] xl:text-[16px] lg:text-[12px] md:text-[10px] text-[12px] rounded-4xl font-semibold font-inter"
+                class="btn-clear bg-[#00A63E] text-white 2xl:px-[30px] xl:px-[20px] lg:px-[18px] md:px-[16px] px-[18px] xl:py-[10px] lg:py-[8px] md:py-[8px] py-[8px] 2xl:text-[16px] xl:text-[16px] lg:text-[12px] md:text-[10px] text-[12px] rounded-4xl font-semibold font-inter"
               >
                 Clear
               </button>
