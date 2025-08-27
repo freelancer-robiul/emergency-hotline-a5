@@ -51,12 +51,16 @@ getElement("card-section").addEventListener("click", function (e) {
 
     let coinNumber = Number(getElement("coin-number").innerText);
 
-    if (coinNumber <= 0) {
-      return alert("Insufficient Coin");
+    if (coinNumber < 20) {
+      return alert("Insufficient Coin. You need 20 coin for calling");
     } else {
       alert(`${serviceName}: ${serviceNumber}`);
       getElement("coin-number").innerText = coinNumber - 20;
       callHistoryContainer.append(newDivElement);
     }
   }
+});
+
+getElement("btn-clear").addEventListener("click", function () {
+  getElement("call-history-container").innerHTML = "";
 });

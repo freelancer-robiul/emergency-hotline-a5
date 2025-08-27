@@ -41,3 +41,7 @@ button,
 .heart:hover {
   color: red;
 }
+
+.btn-call i {
+  pointer-events: none;
+}
