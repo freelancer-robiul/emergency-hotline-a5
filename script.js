@@ -19,7 +19,9 @@ getElement("card-section").addEventListener("click", function (e) {
     let serviceNumber = callButton.parentNode.children[3].innerText;
 
     let newTime = new Date();
-    let currentTime = newTime.toLocaleTimeString();
+    let currentTime = newTime.toLocaleTimeString("en-US", {
+      timeZone: "Asia/Dhaka",
+    });
 
     let callHistoryContainer = getElement("call-history-container");
 
@@ -66,4 +68,18 @@ getElement("card-section").addEventListener("click", function (e) {
 
 getElement("btn-clear").addEventListener("click", function () {
   getElement("call-history-container").innerHTML = "";
+});
+
+getElement("card-section").addEventListener("click", function (e) {
+  if (e.target.classList.contains("btn-copy")) {
+    let btnCopy = e.target;
+    let serviceNumber = btnCopy.parentNode.children[3].innerText;
+
+    navigator.clipboard.writeText(serviceNumber).then(function () {
+      alert(`Number Copied: ${serviceNumber}`);
+
+      let copyNumber = Number(getElement("copy-number").innerText);
+      getElement("copy-number").innerText = copyNumber + 1;
+    });
+  }
 });

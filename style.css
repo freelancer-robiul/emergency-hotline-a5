@@ -45,3 +45,7 @@ button,
 .btn-call i {
   pointer-events: none;
 }
+
+.btn-copy i {
+  pointer-events: none;
+}
