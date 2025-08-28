@@ -18,7 +18,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="max-w-[1920px] mx-auto">
+  <body class="max-w-[1920px] mx-auto overflow-x-hidden">
     <!-- Navbar  flex -->
     <div
       class="navbar flex flex-col md:flex-row justify-between py-[24px] 3xl:px-[60px] 2xl:px-[50px] xl:px-[45px] lg:px-[40px] md:px-[30px] px-[20px]"
@@ -39,7 +39,9 @@
       </div>
 
       <!-- Navbar right side Flex -->
-      <div class="right-side flex items-center gap-9 mt-[20px]">
+      <div
+        class="right-side flex items-center gap-4 sm:gap-6 md:gap-9 mt-[20px]"
+      >
         <div class="nav-heart flex items-center">
           <span
             id="heart-1"
@@ -57,7 +59,7 @@
           <img class="md:w-8 w-6 ml-[10px]" src="./assets/coin.png" alt="" />
         </div>
         <div
-          class="copy bg-[#00A63E] text-white md:px-[36px] px-[18px] md:py-[14px] py-[10px] md:text-[16px] text-[12px] rounded-4xl font-semibold font-inter"
+          class="copy bg-[#00A63E] text-white px-4 sm:px-6 md:px-9 py-2 sm:py-3 md:py-4 text-[12px] sm:text-[14px] md:text-[16px] rounded-4xl font-semibold font-inter"
         >
           <span id="copy-number">0</span>
           <span>Copy</span>
@@ -77,7 +79,7 @@
         Emergency Service Directory
       </h1>
       <p
-        class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] md:px-[0] px-[20px] font-semibold font-hind-madurai"
+        class="2xl:text-[20px] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] px-2 sm:px-4 md:px-0 font-semibold font-hind-madurai"
       >
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
@@ -569,33 +571,7 @@
           <!-- Call History Header part  End -->
 
           <!-- Call History Updated Part  -->
-          <div id="call-history-container" class="call-history-container">
-            <!-- Updated part  -->
-            <!-- <div
-              class="single-container flex justify-between items-center bg-[#FAFAFA] xl:p-[10px] lg:p-[6px] md:p-[6px] p-[10px] rounded-lg mb-[16px]"
-              >
-              <div class="left-side">
-                <h1
-                  class="2xl:text-[16px] xl:text-[14px] lg:text-[12px] text-[12px] text-[#111111] font-[600] font-inter"
-                >
-                  Fire Service Number
-                </h1>
-                <span
-                  class="xl:text-[14px] lg:text-[12px] md:text-[14px] text-[12px] text-[#5C5C5C] font-[400] font-hind-madurai"
-                  >999</span
-                >
-              </div>
-              <div class="right-side">
-                <div class="current-date">
-                  <span
-                    class="2xl:text-[16px] xl:text-[14px] lg:text-[12px] text-[12px] text-[#5C5C5C] font-[400] font-hind-madurai"
-                    >11:36:58AM</span
-                  >
-                </div>
-              </div>
-            </div> -->
-            <!-- Updated part  End-->
-          </div>
+          <div id="call-history-container" class="call-history-container"></div>
           <!-- Call History Updated Part End -->
         </div>
         <!-- History Section End  -->

@@ -49,3 +49,20 @@ button,
 .btn-copy i {
   pointer-events: none;
 }
+
+/*Responsive for 320px-411px*/
+
+@media only screen and (min-width: 320px) and (max-width: 411px) {
+  .single-card .btn-copy,
+  .single-card .btn-call {
+    width: 100%; /* full width */
+    margin-bottom: 8px; /* button er moddhe gap */
+    padding: 10px; /* responsive padding */
+    font-size: 14px; /* responsive font size */
+  }
+
+  /* last button er jonno extra margin na thake */
+  .single-card .btn-call {
+    margin-bottom: 0;
+  }
+}
